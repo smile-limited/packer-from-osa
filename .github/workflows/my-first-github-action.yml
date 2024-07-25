@@ -1,0 +1,10 @@
+name: Packer-Workflow #reserved name
+on: workflow_dispatch ##reserved name The "on" allow us to define the event that will trigger action, but in this case when we use workflow_dispatch, it means manual trigger
+jobs: #reserved name
+  first-job: # Not reserved
+    runs-on: ubuntu-latest
+    steps: #reserved
+      - name: Print greetings
+        run: echo "hello world"
+      - name: Print Goodbye
+        run: echo "Goodbye"
